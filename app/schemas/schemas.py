@@ -1,9 +1,10 @@
-from pydantic import BaseModel
 from typing import Optional
+from pydantic import BaseModel, Field
+from datetime import date, time
 
 class AgendamentoBase(BaseModel):
-    data: str
-    hora: str
+    data: date
+    hora: time
     sala: str
     medico: str
     paciente: str
