@@ -9,7 +9,7 @@ origins = [
     "http://localhost",
     "http://localhost:8000",
     "http://127.0.0.1:5500",
-    "https://frontend-de-produção.vercel.app"
+    "https://frontend-git-main-lucas-souzas-projects-7b26a051.vercel.app"
     # não inclua "null" ou "*" se usar credentials
 ]
 
