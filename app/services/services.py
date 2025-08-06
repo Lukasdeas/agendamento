@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from app.database.connection import db
-from app.models.agendamento import agendamento_helper
+from app.models.models import agendamento_helper
 from bson import ObjectId
 
 collection = db["agendamentos"]
