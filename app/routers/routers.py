@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from app.schemas.schemas import AgendamentoCreate, AgendamentoUpdate
 from app.services import services as service
 
-router = APIRouter(prefix="/agendamento", tags=["Agendamentos"])
+router = APIRouter(prefix="/agendamento/", tags=["Agendamentos"])
 
 @router.get("/")
 async def listar():
