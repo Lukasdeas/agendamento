@@ -8,10 +8,9 @@ app = FastAPI(title="Sistema de Agendamento de Cirurgias")
 origins = [
     "http://localhost",
     "http://localhost:8000",
-    "http://127.0.0.1:5500",  # Para desenvolvimento local com Live Server
-    "frontend-git-main-lucas-souzas-projects-7b26a051.vercel.app",  # URL do seu frontend em produção
-    # Adicione outras URLs de frontend se necessário
-    "null"  # Para requisições de arquivos locais (file://) em alguns navegadores
+    "http://127.0.0.1:5500",
+    "https://frontend-de-produção.vercel.app"
+    # não inclua "null" ou "*" se usar credentials
 ]
 
 app.add_middleware(
