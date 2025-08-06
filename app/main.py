@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(agendamento.router)
+app.include_router(routers.router)
 
 @app.get("/")
 def root():
