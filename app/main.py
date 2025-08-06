@@ -8,11 +8,10 @@ app = FastAPI(title="Sistema de Agendamento de Cirurgias")
 origins = [
     "http://localhost",
     "http://localhost:8000",
-    "http://127.0.0.1:5500",  # Se você estiver testando localmente com Live Server
-    # Adicione aqui a URL COMPLETA do seu frontend em produção!
-    "https://frontend-sepia-kappa-28.vercel.app/",
-    # Exemplo: "https://seu-frontend.netlify.app",
-    "null"  # Pode ser necessário para requisições de arquivos locais (file://) em alguns navegadores
+    "http://127.0.0.1:5500",  # Para desenvolvimento local com Live Server
+    "frontend-git-main-lucas-souzas-projects-7b26a051.vercel.app",  # URL do seu frontend em produção
+    # Adicione outras URLs de frontend se necessário
+    "null"  # Para requisições de arquivos locais (file://) em alguns navegadores
 ]
 
 app.add_middleware(
