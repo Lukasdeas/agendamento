@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from app.schemas.agendamento import AgendamentoCreate, AgendamentoUpdate
-from app.services import agendamento as service
+from app.schemas.schemas import AgendamentoCreate, AgendamentoUpdate
+from app.services import services as service
 
 router = APIRouter(prefix="/agendamento", tags=["Agendamentos"])
 
