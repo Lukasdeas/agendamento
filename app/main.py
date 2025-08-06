@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import agendamento
+from app.routers import routers
 
 app = FastAPI(title="Sistema de Agendamento de Cirurgias")
 
